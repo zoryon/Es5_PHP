@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- style link -->
+    <link rel="stylesheet" href="./css/globals.css">
+
+    <!-- settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Es5_PHP</title>
+</head>
+
+<body>
+    <h1 class="title">Welcome!</h1>
+
+    <form action="./php/index.php" method="POST">
+        <!-- name -->
+        <div class="input-wrapper">
+            <label for="name" class="underline">
+                <span class="label">Name</span>
+                <span class="mandatory">*</span>
+            </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <!-- age -->
+        <div class="input-wrapper">
+            <label for="age">
+                <span class="label">Age</span>
+                <span class="mandatory">*</span>
+            </label>
+            <input type="number" name="age" id="age" required>
+        </div>
+
+        <!-- radio buttons - frequency -->
+        <div class="radio-wrapper">
+            <!-- title -->
+            <p>
+                <span class="label">Payments frequency</span>
+                <span class="mandatory">*</span>
+            </p>
+
+            <!-- monthly -->
+            <div>
+                <label for="monthly">Monthly</label>
+                <input type="radio" name="frequency" id="monthly" value="monthly" required>
+            </div>
+
+            <!-- bimonthly -->
+            <div>
+                <label for="bimonthly">Bimonthly</label>
+                <input type="radio" name="frequency" id="bimonthly" value="bimonthly" required>
+            </div>
+
+            <!-- quarterly -->
+            <div>
+                <label for="quarterly">Quarterly</label>
+                <input type="radio" name="frequency" id="quarterly" value="quarterly" required>
+            </div>
+
+            <!-- annual -->
+            <div>
+                <label for="annual">Annual</label>
+                <input type="radio" name="frequency" id="annual" value="annual" required>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
